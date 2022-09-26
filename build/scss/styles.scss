@@ -1,0 +1,75 @@
+
+@import "../scss/base/_variables";
+@import "../scss/components/_holding";
+@import "../scss/components/_navbar";
+@import "../scss/components/_hero";
+@import "../scss/components/_buttons";
+@import "../scss/components/_attending";
+@import "../scss/components/_taking-part";
+@import "../scss/components/_market-intelligence";
+@import "../scss/components/_about";
+@import "../scss/components/_register";
+@import "../scss/components/_success";
+@import "../scss/components/_footer";
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-primary;
+    scroll-behavior: smooth;
+}
+
+
+.title__divider {
+border: none;
+border-top: 1px solid $clr-light;
+width: 25vw;
+margin: 2rem auto 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+background: $clr-primary;
+}
+
+.emphasised-txt {
+    font-weight: $fw-black;
+}
+
+.full-stop {
+    font-size: $fs-xl;
+    color: $clr-secondary;
+}
+
+.page__title {
+    font-weight: $fw-black;
+    color: $clr-light;
+    font-size: $fs-2xl;
+}
+
+
+.page__subtitle {
+    font-size: $fs-md;
+    color: $clr-light;
+    margin: 2rem 0;
+}
+
+
+p {
+    line-height: 1.4!important;
+}
+
+
+.red-txt {
+    color: $clr-secondary;
+}
+

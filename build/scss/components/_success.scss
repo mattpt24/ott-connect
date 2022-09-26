@@ -1,0 +1,85 @@
+.success__wrapper__container {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: $clr-primary url("../images/ott-connect1.jpg");
+    background: {
+        size: cover;
+        position: center center;
+        blend-mode: multiply;
+    }
+
+
+    .success-page-title {
+        color: $clr-light;
+        font-size: $fs-2xl;
+        opacity: 0;
+        animation: fadeIn .5s ease;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+
+        @media screen and (max-width: $tablet) {
+            font-size: $fs-xl;
+        }
+    }
+
+    .success-subtitle {
+        color: $clr-light;
+        font-size: $fs-sm;
+        padding: 20px;
+        margin: 2rem 0;
+        opacity: 0;
+        animation: fadeIn .5s ease;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+        color: $clr-light;
+        background: rgba(0, 250, 154, 0.2);
+        backdrop-filter: blur(10px);
+        border-radius: 5px;
+        @media screen and (max-width: $tablet) {
+            text-align: center;
+            width: 90vw;
+            margin: 2rem auto;
+        }
+    }
+
+    .icon {
+        font-size: $fs-2xl;
+        color: rgb(0, 250, 154);
+        margin: 2rem 0;
+        border-radius: 100%;
+        animation: flipInX 1s;
+        font-size: 6rem;
+    }
+
+    .info-icon {
+        color: lightgrey;
+    }
+
+    .btn {
+        opacity: 0;
+        animation: fadeIn .5s ease;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+    }
+
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+

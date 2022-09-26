@@ -1,0 +1,27 @@
+
+
+    .holding__page__subtitle {
+        color: $clr-third;
+        font-weight: $fw-regular;
+        font-size: $fs-md;
+        width: 60%;
+        margin: 0 auto;
+        opacity: 0;
+        animation: fadeIn 1s;
+        animation-fill-mode: forwards;
+        animation-delay: .5s;
+
+        @media screen and (max-width: $tablet) {
+            width: 90%;
+            margin: 1rem auto;
+        }
+    }
+
+    a {
+        color: $clr-light;
+        @media screen and (max-width: $tablet) {
+            display: block;
+        }
+    }
+
+

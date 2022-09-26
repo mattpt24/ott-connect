@@ -1,0 +1,185 @@
+#hero {
+    min-height: 100vh;
+    background: $clr-primary url("../images/ott-connect1.jpg");
+    background: {
+        size: cover;
+        position: center center;
+        blend-mode: multiply;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+
+    .hero__content {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        flex-direction: column;
+    }
+
+
+    .hero__title {
+        color: $clr-light;
+        font-size: $fs-2xl;
+        font-weight: $fw-light;
+        opacity: 0;
+        animation: fadeIn 1s ease;
+        animation-fill-mode: forwards;
+        animation-delay: .5s ease;
+        margin-top: 6rem;
+        padding: 2rem;
+        @media screen and (max-width: $tablet) {
+        font-size: 2.8rem;
+        padding: 2rem 1rem 0 1rem;
+        }
+
+    }
+
+    .hero__divider {
+        width: 0;
+        animation: dividerAnimation 1.5s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+
+
+        @media screen and (max-width: $tablet) {
+           display: none;
+        }
+    }
+
+    .hero__locations__container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        @media screen and (max-width: $tablet) {
+            justify-content: center;
+            gap: 1rem;
+        }
+
+
+        .hero__location {
+            transition: all .3s ease;
+            background: #91aff11a;
+            backdrop-filter: blur(10px);
+            border-radius: 5px;
+            padding: 3rem;
+            opacity: 0;
+            animation: fadeIn .5s ease;
+            animation-fill-mode: forwards;
+
+            @media screen and (max-width:$mobile) {
+                width: 80vw;
+                }
+
+            &:hover {
+                transition: all .3s ease;
+                transform: translateY(-10px);
+                box-shadow: 0 0 50px $clr-primary;
+                background: $clr-primary;
+                cursor: none;
+            }
+        }
+
+
+        .hero__location:nth-child(1) {
+            animation-delay: 1s;
+            background: url("../images/indonesia-sml.jpg");
+        }
+
+        .hero__location:nth-child(2) {
+            animation-delay: 1.25s;
+            background: url("../images/dubai-sml.png");
+        }
+
+        .hero__location:nth-child(3) {
+            animation-delay: 1.5s;
+         background: grey url("../images/mumbai-sml.png");
+        }
+
+
+        .hero__location__city {
+            color: white;
+            font-size: $fs-md;
+        }
+
+
+        .hero__location__date {
+            color: $clr-third;
+            font-size: $fs-md;
+        }
+    }
+
+
+
+    .hero__btn__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        opacity: 0;
+        animation: fadeIn 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
+        @media screen and (max-width: $mobile) {
+            flex-direction: column;
+            gap: 1rem;
+            padding-bottom: 3rem;
+        }
+
+
+        .btn{
+            @media screen and (max-width: $mobile) {
+                width: 80vw;
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes dividerAnimation {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}

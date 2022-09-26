@@ -1,0 +1,131 @@
+.tp__subtitle {
+   margin-top: 6rem;
+
+   @media screen and (max-width: $mobile) {
+    margin-top: 2rem;
+   }
+}
+
+.tp-picture {
+    background: url("../images/ott-connect2.jpg")!important;
+    background-size: cover!important;
+}
+
+
+
+
+
+
+
+
+.stand__images__container {
+    background: url("../images/taking-part-bg.jpg");
+    background-size: cover;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: $mobile) {
+        flex-direction: column;
+        gap: 2rem;
+        }
+
+
+    .stand-img {
+        transition: all .4s ease;
+        width: 25vw;
+        margin: 0 auto;
+        border: solid 3px $clr-light;
+        border-radius: 3px;
+        filter: grayscale(100%);
+
+        @media screen and (max-width: $tablet) {
+        width: 30vw;
+        }
+
+        @media screen and (max-width: $mobile) {
+            width: 80vw;
+            filter: grayscale(0);
+            }
+
+        &:hover {
+            transition: all .4s ease;
+            transform: scale(1.2);
+            box-shadow: 0 0 20px $clr-light;
+            filter: grayscale(0);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.price__table__container {
+    background: #1c2563;
+    padding: 6rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    flex-direction: column;
+
+    .desktop--price-table {
+        width: 70vw;
+        box-shadow: 0 0 10px $clr-light;
+        @media screen and (max-width: $tablet) {
+            width: 90vw;
+        }
+
+        @media screen and (max-width: $mobile) {
+            display: none;
+        }
+    }
+
+
+    .mobile--price-table {
+        display: none;
+        @media screen and (max-width: $mobile) {
+            display: block;
+            width: 90vw;
+        }
+    }
+
+
+    .pricing__sponsorship__container {
+        display: flex;
+        justify-content: center;
+        gap: 3rem 0;
+        align-items: center;
+
+     @media screen and (max-width: $mobile) {
+        flex-direction: column;
+     }
+
+
+        .pricing__sponsorship {
+            text-align: center;
+            border-right: solid 1px $clr-light;
+            padding: 2rem;
+
+            @media screen and (max-width: $mobile) {
+                border-right: none;
+                border-bottom: solid .5px $clr-light;
+                padding: 2rem;
+             }
+
+            h3 {
+                color: white;
+            }
+
+            p {
+                color: red;
+            }
+        }
+    }
+}

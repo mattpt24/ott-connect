@@ -1,0 +1,125 @@
+#market-intelligence {
+
+    background: url("../images/mi-page-bg.png");
+    background: {
+        size: cover;
+        position: bottom bottom;
+    }
+
+
+.market-intelligence__container {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12rem 0 4rem 0;
+    @media screen and (max-width: $mobile) {
+        padding-bottom: 2rem;
+    }
+
+    .page__title {
+        @media screen and (max-width: 800px) {
+            font-size: $fs-xl;
+        }
+    }
+}
+
+
+
+.mi__location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 0;
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+
+
+    .mi__location__text {
+        width: 50vw;
+        margin: 0 auto;
+        @media screen and (max-width: 800px) {
+            width: 85vw;
+        }
+
+        .mi__location__name {
+            background: $clr-third;
+            padding: 1rem;
+            border-radius: 3px;
+            display: inline-block;
+            color: $clr-primary;
+            font-size: $fs-lg;
+            @media screen and (max-width: 700px) {
+                font-size: $fs-md;
+            }
+        }
+    
+
+
+        h4 {
+            font-size: $fs-md;
+            color: $clr-light;
+            @media screen and (max-width: 800px) {
+                flex-direction: column;
+            }
+        }
+
+        p {
+            color: $clr-third;
+            line-height: 1.4;
+            margin: 2rem 0;
+            font-size: $fs-sm;
+            font-weight: $fw-regular;
+        }
+
+        .venue {
+            letter-spacing: 10px;
+            color: $clr-third;
+            font-weight: $fw-light;
+            font-size: $fs-md;
+        }
+    }
+
+
+    .mi__location__img__container {
+        width: 50vw;
+        margin: 0 auto;
+        position: relative;
+
+        @media screen and (max-width: 800px) {
+            width: auto;
+        }
+
+
+   .mi__location__image {
+    width: 25vw;
+    border-radius: 3px;
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+   }
+
+  .mi__venue__img {
+    position: absolute;
+    bottom: -4rem;
+    left: -2rem;
+    box-shadow: 5px 5px 10px $clr-txt1;
+    @media screen and (max-width: $tablet) {
+        position: relative;
+        left: .1rem;
+    }
+
+    @media screen and (max-width: 800px) {
+        position: relative;
+        left: 0;
+        width: 80vw;
+    }
+  }
+
+}
+}
+
+}

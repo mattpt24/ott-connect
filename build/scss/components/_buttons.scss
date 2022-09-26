@@ -1,0 +1,52 @@
+
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    outline: none;
+    border: solid 2px $clr-primary;
+
+    &.btn--light {
+        transition: all .3s ease;
+        background: $clr-light;
+        color: $clr-primary;
+        border-color: white;
+
+        &:hover {
+            transition: all .3s ease;
+            background: none;
+            color: white;
+            border-color: white;
+        }
+    }
+
+
+
+    &.btn--dark {
+        transition: all .3s ease;
+        background: $clr-primary;
+        color: $clr-light;
+
+        &:hover {
+            transition: all .3s ease;
+            background: $clr-light;
+            color: $clr-primary;
+            border-color: $clr-primary;
+        }
+    }
+
+
+    &.btn--transparent {
+        transition: all .3s ease;
+        background: none;
+        color: $clr-light;
+        border-color: white;
+
+        &:hover {
+            transition: all .3s ease;
+            background: $clr-light;
+            color: $clr-primary;
+            border-color: $clr-light;
+        }
+    }
+}

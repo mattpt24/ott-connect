@@ -1,0 +1,119 @@
+#about {
+    min-height: 100vh;
+
+    .about__container {
+        display: flex;
+        min-height: 100vh;
+
+        @media screen and (max-width: $tablet) {
+            flex-direction: column;
+        }
+
+
+
+        .left--side {
+            width: 50vw;
+            padding: 12rem 4rem 4rem 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: url("../images/taking-part-bg.jpg");
+            @media screen and (max-width: $tablet) {
+                width: 100vw;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            @media screen and (max-width: $mobile) {
+                padding: 10rem 0 2rem 0;
+                text-align: left;
+            }
+
+
+            .page__title,
+            .page__subtitle {
+                @media screen and (max-width: $mobile) {
+                    font-size: $fs-xl;
+                    padding: 1rem;
+                }
+            }
+
+
+            .about__btn__container {
+               margin-top: 3rem;
+
+               a {
+                @media screen and (max-width: $mobile) {
+                    display: block;
+                    width: 90%;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+               }
+            }
+
+            .about__text {
+                color: $clr-third;
+                font-weight: $fw-regular;
+                font-size: $fs-sm;
+                width: 80%;
+                @media screen and (max-width: $tablet) {
+                    margin: 0 auto;
+                }
+
+                @media screen and (max-width: $mobile) {
+                    width: 90%;
+                }
+            }
+
+            .founders__container {
+                display: flex;
+                gap: 2rem;
+                margin: 2rem 0;
+                @media screen and (max-width: $tablet) {
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                @media screen and (max-width: $mobile) {
+                    flex-direction: column;
+                }
+
+                img {
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px $clr-third;
+                }
+
+                p {
+                    color: white;
+                    margin-top: 1rem;
+                    font-style: italic;
+                }
+            }
+
+            .dinner__container {
+                margin-top: 6rem;
+            }
+        }
+
+        .right--side {
+            width: 50vw;
+            background: $clr-primary url("../images/ott-connect1.jpg");
+            background: {
+                blend-mode: multiply;
+                size: cover;
+                position: center center;
+            }
+            @media screen and (max-width: $tablet) {
+                width: 100vw;
+            }
+        }
+
+
+    }
+
+}
+
+
+
